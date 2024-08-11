@@ -78,18 +78,19 @@
         <SvgIcon icon="hashtag" size={"size-5"} /> Core concepts
       </h1>
 
-      <div class="py-2"></div>
-      <li>Minimal design - without losing functionality</li>
-      <li>
-        Data, actions and UI elements are shown only based on their relevant
-        context
-      </li>
+      <div class="py-2">
+        <li>Minimal design - without losing functionality</li>
+        <li>
+          Data, actions and UI elements are shown only based on their relevant
+          context
+        </li>
+      </div>
     </div>
   </div>
 
   <div class="divider w-1/2 place-self-center" />
 
-  <div class="hero-content text-center w-full !py-0">
+  <div class="hero-content text-center w-full pt-0">
     <div class="w-full space-y-3">
       <h1
         class="text-lg font-semibold flex justify-center items-center gap-1 drop-shadow-md"

@@ -29,7 +29,7 @@
   transition:fade={{ duration: 200, easing: expoInOut }}
 >
   <div
-    class="card bg-base-100 flex place-content-center mt-4 w-full lg:w-3/5 space-y-4"
+    class="card bg-base-100 flex place-content-center w-full lg:w-3/5 space-y-4 py-4"
   >
     <div class="space-y-4">
       <p class="font-semibold">

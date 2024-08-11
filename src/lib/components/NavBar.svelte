@@ -9,11 +9,11 @@
 </script>
 
 <div
-  class="navbar fixed z-50 bg-base-200 shadow-lg rounded-b-2xl !min-h-12 !h-12 !px-4 top-0"
+  class="navbar fixed z-50 bg-base-200 shadow-lg rounded-b-2xl !min-h-12 !h-12 !px-4 top-0 max-sm:justify-between"
 >
-  <div class="navbar-start">
-    <span class="text-lg grid grid-flow-col gap-1 items-center">
-      {@html favicon}{appName}
+  <div class="navbar-start max-sm:w-1/4">
+    <span class="max-sm:text-sm gap-x-2 flex items-center text-lg">
+      {@html favicon}<span class="max-md:hidden">{appName}</span>
     </span>
   </div>
   <div class="navbar-center">
@@ -26,7 +26,8 @@
           ? 'tab-active !border-primary'
           : '!border-base-300 hover:!border-primary'}"
       >
-        <SvgIcon icon="documentDetails" size={"size-5"} /> About
+        <SvgIcon icon="documentDetails" size={"size-5"} />
+        <span class="max-sm:hidden">About</span>
       </a>
       <a
         href={internalHrefs.screenshots}
@@ -36,7 +37,8 @@
           ? 'tab-active !border-primary'
           : '!border-base-300 hover:!border-primary'}"
       >
-        <SvgIcon icon="photo" size={"size-5"} /> Screenshots
+        <SvgIcon icon="photo" size={"size-5"} />
+        <span class="max-sm:hidden">Screenshots</span>
       </a>
       <a
         href={internalHrefs.installNotes}
@@ -46,7 +48,8 @@
           ? 'tab-active !border-primary'
           : '!border-base-300 hover:!border-primary'}"
       >
-        <SvgIcon icon="info" size={"size-5"} /> Install notes
+        <SvgIcon icon="info" size={"size-5"} />
+        <span class="max-sm:hidden">Install notes</span>
       </a>
     </div>
   </div>

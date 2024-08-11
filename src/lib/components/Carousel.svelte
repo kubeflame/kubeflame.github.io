@@ -64,10 +64,11 @@
     </div>
   </div>
 
-  <div class="flex w-full justify-center gap-2">
+  <div class="flex w-full justify-center space-x-2">
     {#each images as image, id}
       <button
-        class="btn btn-sm hover:bg-primary {currentId === $offsetId(id)
+        class="btn btn-sm hover:bg-primary max-sm:btn-xs {currentId ===
+        $offsetId(id)
           ? 'btn-active bg-primary'
           : ''}"
         on:click={() => {
