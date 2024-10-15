@@ -8,6 +8,7 @@ export const externalLinks = {
   kubeflame: {
     gh: "https://github.com/kubeflame",
     slack: "https://kubeflame.slack.com",
+    helmRepo: "https://kubeflame.github.io/charts"
   },
   lutho: {
     gh: "https://github.com/kubeflame/lutho",

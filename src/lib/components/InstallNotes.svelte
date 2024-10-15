@@ -18,6 +18,11 @@
       arm64: `curl.exe -Lo lutho.exe ${externalLinks.lutho.download}/lutho-windows-arm64.exe`,
       amd64: `curl.exe -Lo lutho.exe ${externalLinks.lutho.download}/lutho-windows-amd64.exe`,
     },
+    helm: {
+      add: `helm repo add kubeflame ${externalLinks.kubeflame.helmRepo}`,
+      update: `helm repo update`,
+      install: `helm install lutho kubeflame/lutho`,
+    },
   };
 
   const titleClassNames =
@@ -80,7 +85,7 @@
       <CodeBlock
         codeData={[
           {
-            code: "mv lutho /some-dir-in-your-PATH/lutho",
+            code: "sudo mv lutho /some-dir-in-your-PATH/lutho",
           },
         ]}
       />
@@ -147,6 +152,38 @@
         codeData={[
           {
             code: "Move-Item lutho.exe c:\\some-dir-in-your-PATH\\lutho.exe",
+          },
+        ]}
+      />
+    </div>
+
+    <div class="space-y-4">
+      <div class="divider">
+        <p class={titleClassNames}>
+          <SvgIcon icon={"at"} size={"size-5"} /> Helm Chart
+        </p>
+      </div>
+
+      <CodeBlock
+        codeData={[
+          {
+            code: platformData.helm.add,
+          },
+        ]}
+      />
+
+      <CodeBlock
+        codeData={[
+          {
+            code: platformData.helm.update,
+          },
+        ]}
+      />
+
+      <CodeBlock
+        codeData={[
+          {
+            code: platformData.helm.install,
           },
         ]}
       />

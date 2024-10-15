@@ -29,15 +29,14 @@
     </span>
     <div class="card-body w-full flex flex-col place-items-center">
       <p>
-        Word taken from the Zulu language, which translates to <i
-          ><b>"nothing"</b></i
-        >
+        <i>Lutho</i> - word taken from the Zulu language, which translates to
+        <i><b>"nothing"</b></i>.
       </p>
       <div class="space-y-4">
         <div class="badge border-primary">kubernetes</div>
         <div class="badge border-primary">helm</div>
         <div class="badge border-primary">golang</div>
-        <div class="badge border-primary">web-based</div>
+        <div class="badge border-primary">web-based UI</div>
         <div class="badge border-primary">sveltejs</div>
         <div class="badge border-primary">daisyUI</div>
         <div class="badge border-primary">tailwindcss</div>
