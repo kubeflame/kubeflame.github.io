@@ -1,11 +1,10 @@
 <script lang="ts">
   import { expoInOut } from "svelte/easing";
   import { fade } from "svelte/transition";
-  import luthoSvg from "/src/static/lutho.svg?raw";
+  import luthoSvg from "$lib/assets/icons/lutho.svg?raw";
   import SvgIcon from "./SvgIcon.svelte";
   import Alert from "./Alert.svelte";
   import { externalLinks } from "$lib/utilities/util";
-  import Demo from "./Demo.svelte";
 
   const anchorClassNames =
     "underline decoration-base-300 drop-shadow-sm hover:decoration-primary gap-1 items-center";
@@ -68,7 +67,7 @@
     </div>
   </div>
 
-  <div class="divider w-1/2 place-self-center" />
+  <div class="divider w-1/2 place-self-center"></div>
 
   <div class="hero-content text-center w-full !py-0">
     <div class="w-full">
@@ -88,7 +87,7 @@
     </div>
   </div>
 
-  <div class="divider w-1/2 place-self-center" />
+  <div class="divider w-1/2 place-self-center"></div>
 
   <div class="hero-content text-center w-full pt-0">
     <div class="w-full space-y-3">

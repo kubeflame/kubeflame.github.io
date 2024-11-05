@@ -4,11 +4,11 @@
   import { fade } from "svelte/transition";
 
   const imageModules = import.meta.glob<string>(
-    "$lib/assets/lutho/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}",
+    "$lib/assets/images/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}",
     {
       import: "default",
       eager: true,
-    }
+    },
   );
 
   const images = Object.entries(imageModules).map((mod) => {

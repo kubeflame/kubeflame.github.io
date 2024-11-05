@@ -22,7 +22,7 @@
     </div>
 
     <Video
-      src="/src/static/dashboard_demo.mov"
+      src="/src/lib/assets/videos/dashboard_demo.mov"
       controls
       trackSrc="dashboard_demo.mov"
       class={videoClassNames}
@@ -37,7 +37,7 @@
     </div>
 
     <Video
-      src="/src/static/pod_demo.mov"
+      src="/src/lib/assets/videos/pod_demo.mov"
       controls
       trackSrc="pod_demo.mov"
       class={videoClassNames}
@@ -52,7 +52,7 @@
     </div>
 
     <Video
-      src="/src/static/helm_demo.mov"
+      src="/src/lib/assets/videos/helm_demo.mov"
       controls
       trackSrc="helm_demo.mov"
       class={videoClassNames}

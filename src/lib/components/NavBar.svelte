@@ -1,6 +1,6 @@
 <script lang="ts">
   import ThemeSwitcher from "./ThemeSwitcher.svelte";
-  import favicon from "/src/static/favicon.svg?raw";
+  import favicon from "$lib/assets/icons/favicon.svg?raw";
   import SvgIcon from "./SvgIcon.svelte";
   import { page } from "$app/stores";
   import { internalHrefs, externalLinks } from "$lib/utilities/util";
