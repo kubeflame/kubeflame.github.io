@@ -98,16 +98,16 @@
       </h1>
       <div class="flex-col flex justify-center items-center space-y-2">
         <a href={externalLinks.slackInvite} class="flex {anchorClassNames}">
-          <SvgIcon icon="download" size={"size-5"} /> KubeFlame Slack Workspace invite
+          <SvgIcon icon="slack" size={"size-5"} /> KubeFlame Slack Workspace invite
+        </a>
+        <a href={externalLinks.lutho.slack} class="flex {anchorClassNames}">
+          <SvgIcon icon="slack" size={"size-5"} /> Slack channel
         </a>
         <a href={externalLinks.lutho.releases} class="flex {anchorClassNames}">
           <SvgIcon icon="download" size={"size-5"} /> Available releases
         </a>
         <a href={externalLinks.lutho.gh} class="flex {anchorClassNames}">
           <SvgIcon icon="github" size={"size-5"} /> GitHub repository
-        </a>
-        <a href={externalLinks.lutho.slack} class="flex {anchorClassNames}">
-          <SvgIcon icon="slack" size={"size-5"} /> Slack channel
         </a>
       </div>
     </div>

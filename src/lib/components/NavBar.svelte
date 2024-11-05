@@ -1,6 +1,6 @@
 <script lang="ts">
   import ThemeSwitcher from "./ThemeSwitcher.svelte";
-  import favicon from "$lib/assets/icons/favicon.svg?raw";
+  import kubeflame from "$lib/assets/icons/kubeflame.svg?raw";
   import SvgIcon from "./SvgIcon.svelte";
   import { page } from "$app/stores";
   import { internalHrefs, externalLinks } from "$lib/utilities/util";
@@ -13,7 +13,7 @@
 >
   <div class="navbar-start max-sm:w-1/4">
     <span class="max-sm:text-sm gap-x-2 flex items-center text-lg">
-      {@html favicon}<span class="max-md:hidden">{appName}</span>
+      {@html kubeflame}<span class="max-md:hidden">{appName}</span>
     </span>
   </div>
   <div class="navbar-center">
