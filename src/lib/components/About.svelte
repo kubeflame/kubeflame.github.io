@@ -1,10 +1,11 @@
 <script lang="ts">
   import { expoInOut } from "svelte/easing";
   import { fade } from "svelte/transition";
-  import luthoSvg from "../../../static/lutho.svg?raw";
+  import luthoSvg from "/src/static/lutho.svg?raw";
   import SvgIcon from "./SvgIcon.svelte";
   import Alert from "./Alert.svelte";
   import { externalLinks } from "$lib/utilities/util";
+  import Demo from "./Demo.svelte";
 
   const anchorClassNames =
     "underline decoration-base-300 drop-shadow-sm hover:decoration-primary gap-1 items-center";
@@ -14,7 +15,7 @@
 </script>
 
 <div
-  class="hero h-full bg-base-100 flex flex-col p-4 text-center"
+  class="hero bg-base-100 flex flex-col p-4 text-center pb-10"
   transition:fade={{ duration: 200, easing: expoInOut }}
 >
   <div class="card bg-base-100 flex place-content-center mt-4 w-full lg:w-3/5">
@@ -97,6 +98,9 @@
         <SvgIcon icon="link" size={"size-5"} /> Links
       </h1>
       <div class="flex-col flex justify-center items-center space-y-2">
+        <a href={externalLinks.slackInvite} class="flex {anchorClassNames}">
+          <SvgIcon icon="download" size={"size-5"} /> KubeFlame Slack Workspace invite
+        </a>
         <a href={externalLinks.lutho.releases} class="flex {anchorClassNames}">
           <SvgIcon icon="download" size={"size-5"} /> Available releases
         </a>

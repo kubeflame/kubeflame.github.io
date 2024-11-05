@@ -7,6 +7,7 @@
   import InstallNotes from "$lib/components/InstallNotes.svelte";
   import { onMount } from "svelte";
   import { internalHrefs } from "$lib/utilities/util";
+  import Demo from "$lib/components/Demo.svelte";
 
   onMount(() => {
     if ($page.url.hash === "") {
@@ -21,6 +22,8 @@
   <About />
 {:else if $page.url.hash === internalHrefs.screenshots}
   <Carousel />
+{:else if $page.url.hash === internalHrefs.demo}
+  <Demo />
 {:else if $page.url.hash === internalHrefs.installNotes}
   <InstallNotes />
 {/if}

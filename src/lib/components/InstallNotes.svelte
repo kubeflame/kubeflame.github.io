@@ -30,7 +30,7 @@
 </script>
 
 <div
-  class="hero h-full bg-base-100 flex flex-col p-4 text-center"
+  class="hero bg-base-100 flex flex-col p-4 text-center pb-10"
   transition:fade={{ duration: 200, easing: expoInOut }}
 >
   <div

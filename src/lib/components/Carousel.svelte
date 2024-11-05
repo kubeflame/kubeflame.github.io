@@ -51,7 +51,7 @@
 <svelte:window on:keydown={on_key_down} />
 
 <div
-  class="w-full h-full lg:px-40"
+  class="w-full lg:px-40 pb-10"
   transition:fade={{ duration: 200, easing: expoInOut }}
 >
   <div class="carousel carousel-end w-full">
